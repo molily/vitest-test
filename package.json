@@ -1,0 +1,27 @@
+{
+  "name": "vitest-test",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "vitest": "vitest",
+    "vitest-coverage": "vitest --coverage"
+  },
+  "dependencies": {
+    "preact": "^10.5.15"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/plugin-transform-react-jsx": "^7.16.5",
+    "@preact/preset-vite": "^2.1.5",
+    "@testing-library/dom": "^8.11.1",
+    "@testing-library/preact": "^2.0.1",
+    "babel-plugin-transform-hook-names": "^1.0.2",
+    "jsdom": "^19.0.0",
+    "vite": "^2.7.1",
+    "vitest": "^0.0.122"
+  }
+}

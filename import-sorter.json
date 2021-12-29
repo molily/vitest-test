@@ -1,0 +1,4 @@
+{
+  "groupRules": [{}, "^../", "^./"],
+  "wrappingStyle": "prettier"
+}
