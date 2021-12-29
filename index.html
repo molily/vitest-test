@@ -6,6 +6,27 @@
     <title>hi</title>
   </head>
   <body>
-    <h1>hi</h1>
+    <div id="root1"></div>
+    <div id="root2"></div>
+    <script type="module">
+      import { h, render } from 'preact';
+      import { Message } from './src/Message';
+      import { MemoMessage } from './src/MemoMessage';
+
+      const root1 = document.getElementById('root1');
+      render(
+        h(Message, { title: 'Message title', children: 'Message children' }),
+        root1
+      );
+
+      const root2 = document.getElementById('root2');
+      render(
+        h(MemoMessage, {
+          title: 'MemoMessage title',
+          children: 'MemoMessage children',
+        }),
+        root2
+      );
+    </script>
   </body>
 </html>
