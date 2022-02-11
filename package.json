@@ -16,7 +16,7 @@
   "devDependencies": {
     "@babel/core": "^7.16.5",
     "@babel/plugin-transform-react-jsx": "^7.16.5",
-    "@preact/preset-vite": "^2.1.5",
+    "@preact/preset-vite": "^2.1.7",
     "@rollup/pluginutils": "^4.1.2",
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.37",
     "@testing-library/dom": "^8.11.1",
