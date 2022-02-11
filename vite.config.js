@@ -1,4 +1,5 @@
 import preact from '@preact/preset-vite';
+import { svelte } from '@sveltejs/vite-plugin-svelte';
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
 
@@ -11,6 +12,10 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [
       preact(),
+      svelte({
+        // Disable HMR in test env
+        hot: !process.env.VITEST,
+      }),
     ],
     build: {
       minify: isProduction,

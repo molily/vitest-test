@@ -8,25 +8,17 @@
   <body>
     <div id="root1"></div>
     <div id="root2"></div>
+
     <script type="module">
       import { h, render } from 'preact';
-      import { Message } from './src/Message';
-      import { MemoMessage } from './src/MemoMessage';
+      import { Counter as PreactCounter } from './src/Counter';
+      import SvelteCounter from './src/Counter.svelte';
 
       const root1 = document.getElementById('root1');
-      render(
-        h(Message, { title: 'Message title', children: 'Message children' }),
-        root1
-      );
+      render(h(PreactCounter), root1);
 
       const root2 = document.getElementById('root2');
-      render(
-        h(MemoMessage, {
-          title: 'MemoMessage title',
-          children: 'MemoMessage children',
-        }),
-        root2
-      );
+      new SvelteCounter({ target: root2 });
     </script>
   </body>
 </html>
